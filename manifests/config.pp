@@ -12,6 +12,6 @@ class mysql::config {
   $executable = "${boxen::config::homebrewdir}/bin/mysqld_safe"
   $logdir     = "${boxen::config::logdir}/mysql"
   $logerror   = "${logdir}/error.log"
-  $port       = 13306
-  $socket     = "${datadir}/socket"
+  $port       = 3306
+  $socket     = "/tmp/mysql.sock"
 }
